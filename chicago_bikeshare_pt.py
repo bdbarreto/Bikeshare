@@ -170,19 +170,18 @@ input("Aperte Enter para continuar...")
 # TAREFA 7
 # TODO: Crie um gráfico similar para user_types. Tenha certeza que a legenda está correta.
 print("\nTAREFA 7: Verifique o gráfico!")
-def count_user_type(data_list):
-        """
-    Função:
+
+"""   Função:
     Descobrir a quantidade de tipos de usuários contidos em chicago.csv.
     Argumentos:
     data_list
     Retorna:
     A quantidade(int) de customer, subscriber e dependent.
-    """
+     """
+def count_user_type(data_list):
     customer = 0
     subscriber = 0
     dependent = 0
-
     for linha in data_list:
         if linha[-3].lower() == "customer":
             customer += 1
@@ -190,9 +189,7 @@ def count_user_type(data_list):
             subscriber += 1
         elif linha[-3].lower() == "dependent":
             dependent += 1
-
     return [customer, subscriber, dependent]
-
 
 user_type_list = column_to_list(data_list, -3)
 types = ["Customer", "Subscriber","Dependent"]
@@ -293,7 +290,6 @@ input("Aperte Enter para continuar...")
           param2: O segundo parâmetro.
       Retorna:
           Uma lista de valores x.
-
       """
 
 input("Aperte Enter para continuar...")
