@@ -96,7 +96,14 @@ input("Aperte Enter para continuar...")
 def count_gender(data_list):
     male = 0
     female = 0
-
+    """
+    Função:
+    Contar o número de ocorrências de generos contidos em chicago.csv
+    Parametros:
+    data_list
+    returna:
+    A quantidade(int) de 'Masculino' e 'Feminino' em data_lista.
+    """
     for sample in data_list:
         if sample[6] == 'Male':
             male += 1
@@ -119,6 +126,14 @@ input("Aperte Enter para continuar...")
 # TODO: Crie uma função que pegue o gênero mais popular, e retorne este gênero como uma string.
 # Esperamos ver "Masculino", "Feminino", ou "Igual" como resposta.
 def most_popular_gender(data_list):
+    """
+    Função:
+    Descobrir qual o genero mais recorrento dentro de chicago.csv
+    Parametros:
+    data_lista
+    Retorna:
+    Uma das 3 strings: Masculino, Feminino ou Igual
+    """
     answer = ""
 
     users_by_gender = count_gender(data_list)
@@ -156,6 +171,14 @@ input("Aperte Enter para continuar...")
 # TODO: Crie um gráfico similar para user_types. Tenha certeza que a legenda está correta.
 print("\nTAREFA 7: Verifique o gráfico!")
 def count_user_type(data_list):
+        """
+    Função:
+    Descobrir a quantidade de tipos de usuários contidos em chicago.csv.
+    Argumentos:
+    data_list
+    Retorna:
+    A quantidade(int) de customer, subscriber e dependent.
+    """
     customer = 0
     subscriber = 0
     dependent = 0
