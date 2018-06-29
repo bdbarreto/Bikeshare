@@ -101,7 +101,7 @@ def count_gender(data_list):
     Contar o número de ocorrências de generos contidos em chicago.csv
     Parametros:
     data_list
-    returna:
+    Retorna:
     A quantidade(int) de 'Masculino' e 'Feminino' em data_lista.
     """
     for sample in data_list:
@@ -132,7 +132,7 @@ def most_popular_gender(data_list):
     Parametros:
     data_lista
     Retorna:
-    Uma das 3 strings: Masculino, Feminino ou Igual
+    Uma das 3(str): Masculino, Feminino ou Igual
     """
     answer = ""
 
